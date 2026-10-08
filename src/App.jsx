@@ -1,0 +1,38 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Education from './components/Education';
+import Certifications from './components/Certifications';
+import Achievements from './components/Achievements';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './App.css';
+
+function App() {
+  return (
+    <div className="app-layout">
+      {/* Top Navigation */}
+      <Navbar />
+
+      {/* Main Content Sections */}
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Certifications />
+        <Achievements />
+        <Contact />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
